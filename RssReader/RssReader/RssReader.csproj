@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\GlobalFunctions.cs" />
     <Compile Include="Forms\AddFeed.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +62,11 @@
     <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RemoveFeeds.cs">
+    <Compile Include="Forms\RemoveFeed.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RemoveFeeds.Designer.cs">
-      <DependentUpon>RemoveFeeds.cs</DependentUpon>
+    <Compile Include="Forms\RemoveFeed.Designer.cs">
+      <DependentUpon>RemoveFeed.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,7 +97,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\" />
     <Folder Include="Controls\" />
     <Folder Include="Extensions\" />
   </ItemGroup>

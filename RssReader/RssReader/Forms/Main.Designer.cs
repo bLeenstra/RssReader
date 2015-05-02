@@ -1,4 +1,4 @@
-﻿namespace RssReader {
+﻿namespace RssReader.Forms {
     partial class Main {
         /// <summary>
         /// Required designer variable.
@@ -23,62 +23,130 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("All");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("New");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Catagory");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Subscriptions");
-            this.trvSideNav = new System.Windows.Forms.TreeView();
-            this.grdFeeds = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.grdFeeds)).BeginInit();
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("All");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("New");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Catagory");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Subscriptions");
+            this.trvSideNav=new System.Windows.Forms.TreeView();
+            this.mnuOptionBar=new System.Windows.Forms.MenuStrip();
+            this.helpToolStripMenuItem=new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem=new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem=new System.Windows.Forms.ToolStripMenuItem();
+            this.grdSubscriptions=new System.Windows.Forms.DataGridView();
+            this.addFeedToolStripMenuItem=new System.Windows.Forms.ToolStripMenuItem();
+            this.removeFeedToolStripMenuItem=new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuOptionBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdSubscriptions)).BeginInit();
             this.SuspendLayout();
             // 
             // trvSideNav
             // 
-            this.trvSideNav.Dock = System.Windows.Forms.DockStyle.Left;
-            this.trvSideNav.Location = new System.Drawing.Point(0, 0);
-            this.trvSideNav.Name = "trvSideNav";
-            treeNode1.Name = "nodAll";
-            treeNode1.Text = "All";
-            treeNode2.Name = "nodNew";
-            treeNode2.Text = "New";
-            treeNode3.Name = "nodCatagory";
-            treeNode3.Text = "Catagory";
-            treeNode4.Name = "nodSubs";
-            treeNode4.Text = "Subscriptions";
+            this.trvSideNav.Dock=System.Windows.Forms.DockStyle.Left;
+            this.trvSideNav.Location=new System.Drawing.Point(0, 24);
+            this.trvSideNav.Name="trvSideNav";
+            treeNode13.Name="nodAll";
+            treeNode13.Text="All";
+            treeNode14.Name="nodNew";
+            treeNode14.Text="New";
+            treeNode15.Name="nodCatagory";
+            treeNode15.Text="Catagory";
+            treeNode16.Name="nodSubs";
+            treeNode16.Text="Subscriptions";
             this.trvSideNav.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
-            this.trvSideNav.Size = new System.Drawing.Size(121, 433);
-            this.trvSideNav.TabIndex = 1;
+            treeNode13,
+            treeNode14,
+            treeNode15,
+            treeNode16});
+            this.trvSideNav.Size=new System.Drawing.Size(121, 338);
+            this.trvSideNav.TabIndex=1;
             // 
-            // grdFeeds
+            // mnuOptionBar
             // 
-            this.grdFeeds.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdFeeds.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdFeeds.Location = new System.Drawing.Point(121, 0);
-            this.grdFeeds.Name = "grdFeeds";
-            this.grdFeeds.Size = new System.Drawing.Size(683, 433);
-            this.grdFeeds.TabIndex = 2;
+            this.mnuOptionBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem,
+            this.viewToolStripMenuItem,
+            this.editToolStripMenuItem});
+            this.mnuOptionBar.Location=new System.Drawing.Point(0, 0);
+            this.mnuOptionBar.Name="mnuOptionBar";
+            this.mnuOptionBar.RenderMode=System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.mnuOptionBar.RightToLeft=System.Windows.Forms.RightToLeft.Yes;
+            this.mnuOptionBar.Size=new System.Drawing.Size(784, 24);
+            this.mnuOptionBar.TabIndex=3;
+            this.mnuOptionBar.Text="menuStrip1";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name="helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size=new System.Drawing.Size(52, 20);
+            this.helpToolStripMenuItem.Text="About";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addFeedToolStripMenuItem,
+            this.removeFeedToolStripMenuItem});
+            this.viewToolStripMenuItem.Name="viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size=new System.Drawing.Size(61, 20);
+            this.viewToolStripMenuItem.Text="Settings";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name="editToolStripMenuItem";
+            this.editToolStripMenuItem.Size=new System.Drawing.Size(101, 20);
+            this.editToolStripMenuItem.Text="Mark all as read";
+            // 
+            // grdSubscriptions
+            // 
+            this.grdSubscriptions.ColumnHeadersHeightSizeMode=System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdSubscriptions.Dock=System.Windows.Forms.DockStyle.Fill;
+            this.grdSubscriptions.Location=new System.Drawing.Point(121, 24);
+            this.grdSubscriptions.Name="grdSubscriptions";
+            this.grdSubscriptions.Size=new System.Drawing.Size(663, 338);
+            this.grdSubscriptions.TabIndex=4;
+            // 
+            // addFeedToolStripMenuItem
+            // 
+            this.addFeedToolStripMenuItem.Name="addFeedToolStripMenuItem";
+            this.addFeedToolStripMenuItem.Size=new System.Drawing.Size(152, 22);
+            this.addFeedToolStripMenuItem.Text="Add Feed";
+            this.addFeedToolStripMenuItem.Click+=new System.EventHandler(this.addFeedToolStripMenuItem_Click);
+            // 
+            // removeFeedToolStripMenuItem
+            // 
+            this.removeFeedToolStripMenuItem.Name="removeFeedToolStripMenuItem";
+            this.removeFeedToolStripMenuItem.Size=new System.Drawing.Size(152, 22);
+            this.removeFeedToolStripMenuItem.Text="Remove Feed";
+            this.removeFeedToolStripMenuItem.Click+=new System.EventHandler(this.removeFeedToolStripMenuItem_Click);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 433);
-            this.Controls.Add(this.grdFeeds);
+            this.AutoScaleDimensions=new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode=System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize=new System.Drawing.Size(784, 362);
+            this.Controls.Add(this.grdSubscriptions);
             this.Controls.Add(this.trvSideNav);
-            this.Name = "Main";
-            this.Text = "Simple Rss reader";
-            ((System.ComponentModel.ISupportInitialize)(this.grdFeeds)).EndInit();
+            this.Controls.Add(this.mnuOptionBar);
+            this.MainMenuStrip=this.mnuOptionBar;
+            this.MinimumSize=new System.Drawing.Size(800, 400);
+            this.Name="Main";
+            this.Text="Simple Rss reader";
+            this.mnuOptionBar.ResumeLayout(false);
+            this.mnuOptionBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdSubscriptions)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.TreeView trvSideNav;
-        private System.Windows.Forms.DataGridView grdFeeds;
+        private System.Windows.Forms.MenuStrip mnuOptionBar;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.DataGridView grdSubscriptions;
+        private System.Windows.Forms.ToolStripMenuItem addFeedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeFeedToolStripMenuItem;
     }
 }
 

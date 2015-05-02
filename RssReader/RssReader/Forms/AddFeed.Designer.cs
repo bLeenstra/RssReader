@@ -1,4 +1,4 @@
-﻿namespace RssReader.Forms {
+﻿namespace RssReader.Forms{
     partial class AddFeed {
         /// <summary>
         /// Required designer variable.

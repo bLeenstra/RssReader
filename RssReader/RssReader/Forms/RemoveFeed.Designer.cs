@@ -1,5 +1,5 @@
 ﻿namespace RssReader.Forms {
-    partial class RemoveFeeds {
+    partial class RemoveFeed {
         /// <summary>
         /// Required designer variable.
         /// </summary>

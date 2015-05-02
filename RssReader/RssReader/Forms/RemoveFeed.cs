@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RssReader.Forms {
-    public partial class RemoveFeeds : Form {
-        public RemoveFeeds() {
+    public partial class RemoveFeed : Form {
+        public RemoveFeed() {
             InitializeComponent();
         }
     }
